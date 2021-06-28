@@ -1,19 +1,48 @@
-# How To add Custom Fonts
-  1. Download Your Favorite fonts
-  2. Create src folder in your project
-        -> Create fonts folder into your src folder
-  3. Paste the fonts file in fonts folder
-  4. Create react-native.config.js file
-        -> Write the given code on this file
-            > module.exports = {
-                  src : ['./src/fonts']
-                  }
-  5. Open Terminal type '>npx react-native link' . It's linking the fonts your ios and android projects.
- 
- # RefreshControl Using FlatList snapshot is here
- 
-![@refresh1](https://user-images.githubusercontent.com/84439115/122920765-5e387e00-d37f-11eb-91a3-e06adddfe47e.png)
-![@refresh2](https://user-images.githubusercontent.com/84439115/122920788-62fd3200-d37f-11eb-8311-49201c8a68f3.png)
-![@refresh3](https://user-images.githubusercontent.com/84439115/122920801-65f82280-d37f-11eb-823d-34c6368210f1.png)
+# Animations 
 
- 
+	-> Animations are very important to create a great user experience. Stationary objects
+must overcome inertia as they moving. Objects in motion have momentum and rarely come to a stop immediately.
+Animations allow you to convey physically believable motion in your interface.
+
+	-> React Native provides two complementary animation systems. 
+
+		1. Animated for granular and interactive control of specific values
+		2. LayoutAnimation for animated global layout transactions.
+
+# Animated API
+
+	-> The Animated API is designed to concisely express a wide variety of interesting
+animation and interaction patterns in a very performant way. Animated focuses on declarative relationships
+between inputs and outputs, with configurable transforms in between and start/stop methods to control time-based animation execution.
+
+	-> Animated exports six animatable component types : 
+		
+		1. View
+		2. Text
+		3. Image
+		4. ScrollView
+		5. FlatList
+		6. SectionList
+	
+	-> You can also create your own using Animated.createAnimatedComponent().
+
+# Configuring animations
+
+	-> Animations are heavily configurable. Custom and predefined easing functions, delays, durations, decay factors, spring constants, and more can all be tweaked depending on the type of animation.
+
+	-> Animated provides several animation types, the most commonly used one being Animated.timing(). 
+
+	-> It supports animating a value over time using one of various predefined easing functions, or you can use your owen.
+
+	-> Easing functions are typically used in animation to convey gradual acceleration and deceleration of objects.
+
+
+# Reference Link for more information about Animations
+	> https://reactnative.dev/docs/animations
+
+
+# Here is snapshot link
+
+https://user-images.githubusercontent.com/84439115/123581831-5010b480-d7fa-11eb-91c1-0d35de8fa28e.mp4
+
+https://user-images.githubusercontent.com/84439115/123581837-52730e80-d7fa-11eb-9509-f38ea046cd73.mp4
