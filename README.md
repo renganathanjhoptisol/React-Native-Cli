@@ -1,52 +1,23 @@
-# Animations 
+# React Navigation 
 
-	-> Animations are very important to create a great user experience. Stationary objects
-must overcome inertia as they moving. Objects in motion have momentum and rarely come to a stop immediately.
-Animations allow you to convey physically believable motion in your interface.
+	-> There are three different types of navigation available in react native
 
-	-> React Native provides two complementary animation systems. 
+		1. Stack
+		2. Tab
+		3. Drawer
 
-		1. Animated for granular and interactive control of specific values
-		2. LayoutAnimation for animated global layout transactions.
-
-# Animated API
-
-	-> The Animated API is designed to concisely express a wide variety of interesting
-animation and interaction patterns in a very performant way. Animated focuses on declarative relationships
-between inputs and outputs, with configurable transforms in between and start/stop methods to control time-based animation execution.
-
-	-> Animated exports six animatable component types : 
-		
-		1. View
-		2. Text
-		3. Image
-		4. ScrollView
-		5. FlatList
-		6. SectionList
+	-> Refer Document this section Because of There is Very clear explain available to everyone understand Easily.
 	
-	-> You can also create your own using Animated.createAnimatedComponent().
+	-> The Document Link is here , I have used react navigation 5x version if you use some othere version then change your version type because of the document is modified the version.
 
-# Configuring animations
+		> https://reactnavigation.org/docs/getting-started/
 
-	-> Animations are heavily configurable. Custom and predefined easing functions, delays, durations, decay factors, spring constants, and more can all be tweaked depending on the type of animation.
+	* Doc is your friend ):-
+	
 
-	-> Animated provides several animation types, the most commonly used one being Animated.timing(). 
+# Here is the snapshots and Vido
 
-	-> It supports animating a value over time using one of various predefined easing functions, or you can use your owen.
-
-	-> Easing functions are typically used in animation to convey gradual acceleration and deceleration of objects.
-
-
-# Reference Link for more information about Animations
-	> https://reactnative.dev/docs/animations
+https://user-images.githubusercontent.com/84439115/124219952-a80d2b00-db1a-11eb-8d75-9601bb25d3e2.mp4
 
 
-# Here is snapshot link
-
-https://user-images.githubusercontent.com/84439115/123581831-5010b480-d7fa-11eb-91c1-0d35de8fa28e.mp4
-
-https://user-images.githubusercontent.com/84439115/123581837-52730e80-d7fa-11eb-9509-f38ea046cd73.mp4
-
-https://user-images.githubusercontent.com/84439115/123581920-81898000-d7fa-11eb-92d5-9c8ce7778549.mp4
-
-![Screenshot_1624531307](https://user-images.githubusercontent.com/84439115/123582173-ffe62200-d7fa-11eb-8fdc-97af3241efb6.png)
+https://user-images.githubusercontent.com/84439115/124219961-ac394880-db1a-11eb-81ca-5d0fcbffd922.mp4
