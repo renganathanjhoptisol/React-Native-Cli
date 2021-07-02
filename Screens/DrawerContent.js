@@ -50,17 +50,14 @@ export function DrawerContent (props) {
                             <DrawerItem 
                                 label="Explore"
                                 onPress={()=> {props.navigation.navigate('Explore')}}
-                            />  
+                            />    
+                            <DrawerItem 
+                                label="Settings"
+                                onPress={()=> {props.navigation.navigate('Settings')}}
+                            /> 
                         </Drawer.Section>
-
                 </View>
             </DrawerContentScrollView>
-            <Drawer.Section style={styles.bottomDrawerSection}>
-                <DrawerItem 
-                    label="sign Out"
-                    onPress={()=> {}}
-                />
-            </Drawer.Section>
         </View>
     );
 }
