@@ -76,12 +76,12 @@ export default class App extends Component {
                 </View>
               );
             })}
-          </ScrollView>
+          </ScrollView>              
           <View style={styles.indicatorContainer}>
             {images.map((image, imageIndex) => {
               const width = this.scrollX.interpolate({
                 inputRange: [
-                  windowWidth * (imageIndex - 1),
+                  windowWidth * (imageIndex - 1), 
                   windowWidth * imageIndex,
                   windowWidth * (imageIndex + 1),
                 ],
@@ -90,7 +90,7 @@ export default class App extends Component {
               });
               return (
                 <Animated.View
-                  key={imageIndex}
+                  key={imageIndex}          
                   style={[styles.normalDot, {width}]}
                 />
               );

@@ -1,39 +1,22 @@
-import React, {Component} from 'react';
-import { View, Text, StyleSheet, StatusBar } from 'react-native';
-// import _Animation from './src/components/_Animation';
-// import _allAnimated from './src/components/Animation/_allAnimated';
-import _TextAnimator from './src/components/Animation/_TextAnimator';
+import React, { Component } from 'react';
+
+import { NavigationContainer } from '@react-navigation/native';
+
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import MainTabScreen from './Screens/MainTabScreen';
+
+const Drawer = createDrawerNavigator ();
+
 
 export default class App extends Component {
-  render () {
+  render() {
     return (
-      <View style={styles.container}>
-        <StatusBar hidden />
-        {/* <_Animation /> */}
-        {/* <_allAnimated /> */}
-        <_TextAnimator 
-          content = 'For the things we have to learn before we can do them, we learn by doing them. REACT NATIVE❤️'
-          textStyle = {styles.textStyle}
-          style = {styles.containerStyle}
-        />
-      </View>
+     <NavigationContainer>
+       <Drawer.Navigator initialRouteName="Home">
+         <Drawer.Screen name="Home" component={MainTabScreen}/>
+         {/* <Drawer.Screen name="Details" component={DetailStackScreen}/> */}
+       </Drawer.Navigator>
+      </NavigationContainer>
     );
   }
 }
-
-const styles = StyleSheet.create ({
-  container : {
-    flex : 1,
-    justifyContent : "center",
-    paddingTop : 10,
-    backgroundColor : "#ecf0f1",
-    padding : 0,
-  },
-  containerStyle : {},
-  textStyle : {
-    fontSize : 28,
-    fontWeight : "100",
-    fontFamily : "Montserrat-Medium",
-    marginBottom : 14,
-  }
-})
