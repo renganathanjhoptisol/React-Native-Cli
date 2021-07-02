@@ -17,4 +17,10 @@
 
 # Here is the snapshots and Vido
 
+![@0](https://user-images.githubusercontent.com/84439115/124252752-eb7c8f00-db44-11eb-91c5-238d617d0a4c.png)
+
+![@2](https://user-images.githubusercontent.com/84439115/124252765-f1727000-db44-11eb-85cd-9e1107e37da3.png)
+
+![@1](https://user-images.githubusercontent.com/84439115/124252782-f505f700-db44-11eb-909e-ba7ac4c185a5.png)
+
 https://user-images.githubusercontent.com/84439115/124252472-993b6e00-db44-11eb-884a-8550118a2b7f.mp4
