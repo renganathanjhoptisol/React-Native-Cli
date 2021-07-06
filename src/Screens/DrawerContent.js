@@ -1,20 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import {
     Avatar,
     Title,
     Caption,
-    Paragraph,
     Drawer,
-    Text,
-    TouchableRipple,
-    Switch
 } from 'react-native-paper';
 
-import { DrawerContentScrollView } from '@react-navigation/drawer';
-import { DrawerItem } from '@react-navigation/drawer';
+import { DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer';
 
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+
+
 
 export function DrawerContent (props) {
     return (
@@ -55,6 +51,10 @@ export function DrawerContent (props) {
                                 label="Settings"
                                 onPress={()=> {props.navigation.navigate('Settings')}}
                             /> 
+                            <DrawerItem 
+                                label="Login"
+                                onPress={()=>{props.navigation.navigate('Login')}}
+                            />
                         </Drawer.Section>
                 </View>
             </DrawerContentScrollView>

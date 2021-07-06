@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -9,14 +9,15 @@ import HomeScreen from './HomeScreen';
 import DetailScreen from './DetailScreen';
 import ProfileScreen from './ProfileScreen';
 import ExploreScreen from './ExploreScreen';
-import SettingScreen from './SettingScreen'
 
 const HomeStack = createStackNavigator();
 const DetailStack = createStackNavigator();
 const ProfileStack = createStackNavigator();
 const ExploreStack = createStackNavigator();
+const LoginStack = createStackNavigator();
 
-const SettingStack = createStackNavigator();
+
+
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -154,25 +155,4 @@ const HomeStackScreen = ({navigation}) => (
         )   
       }}/>
     </ExploreStack.Navigator>
-  );
-
-  const SettingStackScreen = ({navigation}) => (
-    <SettingStack.Navigator screenOptions = {{
-      headerStyle : {
-       backgroundColor : "#009387"
-     },
-     headerTintColor : "#fff",
-     headerTitleStyle : {
-       fontWeight : "bold"
-     }
-    }}>
-      <SettingStack.Screen name = "Settings" component = {SettingStackScreen} options={{
-         headerLeft : () => (
-          <Icon.Button name="ios-menu" size={25}backgroundColor = "#009387" 
-          onPress={() => {
-            navigation.openDrawer() 
-          }} > </Icon.Button>
-        )   
-      }}/>
-    </SettingStack.Navigator>
   );

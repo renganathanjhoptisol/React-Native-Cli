@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { View, Text, Button, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import React from 'react';
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
 const HomeScreen = ({navigation}) => {
     return (
@@ -23,13 +23,18 @@ const HomeScreen = ({navigation}) => {
       > 
           <Text style={{fontFamily : "Montserrat-Regular", textAlign : "center", fontWeight : "300", fontSize : 20}}>Go to Home Screen</Text>
       </TouchableOpacity>
-      <TouchableOpacity 
-        style={styles.touchButton1}
+      <View>
+      <TouchableOpacity
+        style = {styles.touchButton1}
         onPress = { () => {
-          navigation.navigate('Home')
+          navigation.navigate("Login", {
+    
+          });
         }}
-      >
+      > 
+          <Text style={{fontFamily : "Montserrat-Regular", textAlign : "center", fontWeight : "300", fontSize : 20}}>Logout</Text>
       </TouchableOpacity>
+      </View>
     </View>
     </View>
   );
@@ -74,5 +79,13 @@ const styles = StyleSheet.create ({
     borderRadius : 12,
     alignItems : "center",
   },
+  touchButton1 : {
+    width : 250,
+    height : 45,
+    margin : 20,
+    borderRadius : 12,
+    backgroundColor : "#ccccff",
+    justifyContent: "space-evenly",
+  }
 });
 

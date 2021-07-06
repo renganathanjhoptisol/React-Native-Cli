@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { View, Text, Button, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import React from 'react';
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
 const HomeScreen = ({navigation}) => {
     return (
@@ -23,13 +23,19 @@ const HomeScreen = ({navigation}) => {
       > 
           <Text style={{fontFamily : "Montserrat-Regular", textAlign : "center", fontWeight : "300", fontSize : 20}}>Go to Updates Screen</Text>
       </TouchableOpacity>
-      <TouchableOpacity 
-        style={styles.touchButton1}
+      <View>
+      <TouchableOpacity
+        style = {styles.touchButton1}
         onPress = { () => {
-          navigation.navigate('Profile')
+          navigation.navigate("Login", {
+              userName : "Rengan",
+              action : "Listen to the Music!",
+          });
         }}
-      >
+      > 
+          <Text style={{fontFamily : "Montserrat-Regular", textAlign : "center", fontWeight : "300", fontSize : 20}}>Login</Text>
       </TouchableOpacity>
+      </View>
     </View>
     </View>
   );
@@ -61,7 +67,7 @@ const styles = StyleSheet.create ({
   },
   homeText : {
     textAlign : "center",
-    padding : 20,
+    padding : 10,
     fontSize : 20,
     fontWeight : "100",
     fontFamily : "Montserrat-Medium",
@@ -73,6 +79,15 @@ const styles = StyleSheet.create ({
     width : 250,
     borderRadius : 12,
     alignItems : "center",
+    justifyContent: "space-between",
   },
+  touchButton1 : {
+    width : 250,
+    height : 45,
+    margin : 20,
+    borderRadius : 12,
+    backgroundColor : "#ccccff",
+    justifyContent: "space-evenly",
+  }
 });
 
