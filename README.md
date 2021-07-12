@@ -1,26 +1,18 @@
-# React Navigation 
+# React Redux
 
-	-> There are three different types of navigation available in react native
-
-		1. Stack
-		2. Tab
-		3. Drawer
-
-	-> Refer Document this section Because of There is Very clear explain available to everyone understand Easily.
+	-> Actions
 	
-	-> The Document Link is here , I have used react navigation 5x version if you use some othere version then change your version type because of the document is modified the version.
+	-> Reducers
 
-		> https://reactnavigation.org/docs/getting-started/
+	-> Store
 
-	* Doc is your friend ):-
-	
+	-> Dispatch
 
-# Here is the snapshots and Vido
+# Refer these link You will get better understanding about redux basics
 
-![@0](https://user-images.githubusercontent.com/84439115/124252752-eb7c8f00-db44-11eb-91c5-238d617d0a4c.png)
+	> https://medium.com/@imranhishaam/react-native-with-redux-for-beginners-6281959a2899
 
-![@2](https://user-images.githubusercontent.com/84439115/124252765-f1727000-db44-11eb-85cd-9e1107e37da3.png)
 
-![@1](https://user-images.githubusercontent.com/84439115/124252782-f505f700-db44-11eb-909e-ba7ac4c185a5.png)
+# Snapshot Here
 
-https://user-images.githubusercontent.com/84439115/124252472-993b6e00-db44-11eb-884a-8550118a2b7f.mp4
+https://user-images.githubusercontent.com/84439115/125241807-8a557800-e309-11eb-899a-4ae6fd034451.mp4
