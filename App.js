@@ -1,10 +1,23 @@
-import React from 'react'
-import RegisteredRoute from './src/Navigations/RegisteredRoute';
+import React, { Component } from 'react';
 
-export default function App() {
-  return (
-      <RegisteredRoute/>
-  );
+import { Provider } from 'react-redux';
+
+import store from './src/Reducers/index';
+import CounterAction from './src/Actions/CounterAction'
+
+
+export class App extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+     <Provider store={store}>
+        <CounterAction/>
+     </Provider>
+    )
+  }
 }
 
-
+export default App;

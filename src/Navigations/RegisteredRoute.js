@@ -17,7 +17,7 @@ function RegisteredRoute() {
          <Drawer.Screen name="Login" component={UnRegisteredRoute}/> 
          <Drawer.Screen name="HomeDrawer" component={MainTabScreen}/>
          <Drawer.Screen name="Drawer" component={DrawerContent}/>
-         <Drawer.Screen name="Settings" component={SettingScreen} />
+         <Drawer.Screen name="Settings" component={SettingScreen} />   
        </Drawer.Navigator>
       </NavigationContainer>
   );
